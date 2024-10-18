@@ -1,6 +1,6 @@
 import { Colors } from "@/constants/Colors";
+import { Fonts } from "@/constants/Fonts";
 import { StyleSheet, Text, View } from "react-native";
-
 
 interface CounterProps {
     label: string;
@@ -31,10 +31,11 @@ const styling = (color: string) => StyleSheet.create({
     },
     label: {
         color: color,
-        fontWeight: 'bold',
+        fontFamily: Fonts.bold,
         fontSize: 14
     },
     counter: {
+        fontFamily: Fonts.bold,
         backgroundColor: Colors.gray_400,
         paddingHorizontal: 8,
         paddingVertical: 2,
